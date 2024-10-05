@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #5f27cd, #341f97);
+  }
+  
+  .bg {
+    position: relative;
+    width: 85%;
+    height: 90%;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  
+  .bubbles span {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    animation: animateBubble 25s linear infinite;
+    bottom: -150px;
+  }
+  
+  .bubbles span:nth-child(1) {
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    animation-duration: 20s;
+  }
+  
+  .bubbles span:nth-child(2) {
+    left: 20%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 22s;
+  }
+  
+  .bubbles span:nth-child(3) {
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    animation-duration: 18s;
+  }
+  
+  .bubbles span:nth-child(4) {
+    left: 40%;
+    width: 70px;
+    height: 70px;
+    animation-duration: 25s;
+  }
+  
+  .bubbles span:nth-child(5) {
+    left: 55%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 15s;
+  }
+  
+  .bubbles span:nth-child(6) {
+    left: 65%;
+    width: 80px;
+    height: 80px;
+    animation-duration: 28s;
+  }
+  
+  .bubbles span:nth-child(7) {
+    left: 75%;
+    width: 40px;
+    height: 40px;
+    animation-duration: 20s;
+  }
+  
+  .bubbles span:nth-child(8) {
+    left: 85%;
+    width: 100px;
+    height: 100px;
+    animation-duration: 30s;
+  }
+  
+  @keyframes animateBubble {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-1000px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  .login {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .login-form input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.705);
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7158e2;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #341f97;
+  }
+  .top-section {
+    display: flex;
+    width: 100%; /* Ensure full width */
+    justify-content: space-evenly; /* Distribute space between calendar and event notification */
+  }
+  .logininfo , .animation{
+    color: black;
+    height: 30vh;
+    background-color: rgba(137, 43, 226, 0.493);
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 2.5%;
+  }
+  .animation{
+  color: black;
+  height: 30vh;
+  background-color: rgba(137, 43, 226, 0.493);
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: 2.5%;
+  }
+  .logininfo{
+    margin-top: 50px;
+    width: 40%;
+    height: 70vh;
+  }
+  .animation{
+    margin-top: 50px;
+    height: 70vh;
+    width: 40%;
+  }

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #353535;
+}
+.bg {
+  height: 80vh;
+  width: 85vw;
+  background-color: rgba(255, 239, 228, 0.925);
+  border-radius: 50px;
+}
+.navbar {
+  color: black;
+  height: 8vh;
+  width: 95%;
+  background-color: rgba(137, 43, 226, 0.26);
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: 2.5%;
+  display: flex;
+  
+}
+
+.navbarstyle {
+  color: black;
+  font-weight: 750;
+  font-size: larger;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  /* background-color: chartreuse; */
+  margin: 10px;
+  padding-top: 30px;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  position: relative; /* Ensure position for transform */
+}
+
+.navbarstyle a {
+text-decoration: none;
+}
+.navbarstyle:hover {
+  font-size: 1.5em; /* Scale up the font on hover */
+  transform: scale(1.1); /* Scale up the element itself */ 
+  text-decoration: underline;
+}
+
+.navbarstyle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  /* background-color: transparent; */
+  border-radius: 40px;
+  transition: all 0.4s ease;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Arrange items in columns */
+  align-items: center; /* Center items horizontally */
+}
+
+.top-section {
+  display: flex;
+  width: 100%; /* Ensure full width */
+  justify-content: space-evenly; /* Distribute space between calendar and event notification */
+}
+
+.calender, .eventnotification, .updates , .logininfo , .animation{
+  color: black;
+  height: 30vh;
+  background-color: rgba(137, 43, 226, 0.26);
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: 2.5%;
+}
+
+.calender {
+  width: 30%;
+}
+
+.eventnotification {
+  width: 40%;
+}
+
+.updates {
+  width: 90%; /* Make updates span almost full width */
+}
+
+.logininfo{
+  margin-top: 50px;
+  width: 40%;
+  height: 70vh;
+}
+.animation{
+  margin-top: 50px;
+  height: 70vh;
+  width: 40%;
+}
+
